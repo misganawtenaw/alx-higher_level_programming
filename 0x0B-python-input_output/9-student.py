@@ -1,16 +1,17 @@
 #!/usr/bin/python3
-"""
-Method 9-student
+""" Module that defines the class Student
 """
 
 
 class Student:
-    """ defines a student based on full name and age """
+    """ Class to create student instances """
 
     def __init__(self, first_name, last_name, age):
+        """ Special method to initialize """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self):
-        return self.__dict_
+        """ Method that returns directory description """
+        return self.__dict__.copy()
